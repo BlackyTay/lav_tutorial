@@ -22,14 +22,18 @@
         <tr>
             <th>No</th>
             <th>Name</th>
+            <th>Price(RM)</th>
             <th>Details</th>
+            <th>Publish</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($products as $product)
         <tr>
             <td>{{ ++$i }}</td>
             <td>{{ $product->name }}</td>
+            <td>{{ $product->price }}</td>
             <td>{{ $product->detail }}</td>
+            <td>{{ $product->public == 0 ? 'YES' : 'NO' }}</td>
             <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
    
