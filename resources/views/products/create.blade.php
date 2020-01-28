@@ -1,7 +1,7 @@
 @extends('products.layout')
   
 @section('content')
-<div class="row">
+<div class="">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
             <h2>Add New Product</h2>
@@ -26,14 +26,14 @@
 <form action="{{ route('products.store') }}" method="POST">
     @csrf
   
-    <div class="row">
+    <div class="">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Name:</strong>
                 <input type="text" name="name" class="form-control" placeholder="Name">
             </div>
         </div>
-     <div class="row">
+     <div class="">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Price:</strong>
