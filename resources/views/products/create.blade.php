@@ -49,8 +49,9 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Publish:</strong>
-                <input name="publish" type="checkbox" class="form-check-input" value="1" />
-        </div>
+                    <input name="publish" type="radio" class="form-check-input" value="1" >Yes</input>
+                    <input name="publish" type="radio" class="form-check-input" value="0" >No</input>
+            </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
