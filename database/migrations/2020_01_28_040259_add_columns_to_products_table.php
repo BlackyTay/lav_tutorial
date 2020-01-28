@@ -14,7 +14,8 @@ class AddColumnsToProductsTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            //
+            $table->decimal('price','',2);
+            $table->boolean('publish');
         });
     }
 
