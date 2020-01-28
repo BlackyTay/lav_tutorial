@@ -17,7 +17,10 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-   
+
+    @if(isset($products))
+        <p> The Search results for <b> {{ $query }} </b> are :</p>
+
     <table class="table table-bordered">
         <tr>
             <th>No</th>
@@ -50,7 +53,6 @@
         </tr>
         @endforeach
     </table>
-  
-    {!! $products->links() !!}
-      
+   @endif
+         
 @endsection
