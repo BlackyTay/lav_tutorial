@@ -11,17 +11,14 @@
             </div>
         </div>
     </div>
+   
+    @include('products.searchbar')
 
-@include('products.searchbar')
-   
-    @if ($message = Session::get('success'))
-        <div class="alert alert-success">
-            <p>{{ $message }}</p>
-        </div>
-    @endif
-   
+    @if(isset($products))
+        <p> The Search results for <b> {{ $query }} </b> are :</p>
+
 @include('products.table')
-  
-    {!! $products->links() !!}
-      
+
+   @endif
+         
 @endsection
