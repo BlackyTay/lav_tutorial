@@ -33,7 +33,7 @@
             <td>{{ $product->name }}</td>
             <td>{{ $product->price }}</td>
             <td>{{ $product->detail }}</td>
-            <td>{{ $product->public == 0 ? 'YES' : 'NO' }}</td>
+            <td>{{ $product->publish ? 'Yes':'No' }}</td>
             <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
    
